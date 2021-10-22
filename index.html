@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="scss/style.css">
-</head>
-<body>
-    <div class="cursor"></div>
-    <div class="cursorFollow"></div>
-    <header class="header">
-        <div class="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>portfolio</title>
+        <link rel="stylesheet" href="scss/style.css">
+      
+    </head>
+    <body>
+        <div class="cursor"></div>
+        <div class="cursorFollow"></div>
+        <header class="header">
+            <div class="container">
             <nav class="header-nav">
                 <ul class="header-list">
                     <li class="item-menu">ABOUT</li>
@@ -71,10 +72,12 @@
         </div>
     </section>
     <section class="review">
-        <div class="container">
+        <div class="reivew-img-content">
             <img src="img/6.jpeg" alt="" class="review-img img_js">
             <img src="img/5.jpeg" alt="" class="review-img img_js">
             <img src="img/4.jpeg" alt="" class="review-img img_js">
+        </div>
+        <div class="container review-content">
             <div class="review-content">
                 <h3 class="review-title title_js">Editoral</h3>
                 <h3 class="review-title title_js">Editoral</h3>
@@ -100,6 +103,8 @@
             <span data-text="I">I</span>
             <span data-text="G">G</span>
             <span data-text="N">N</span>
+            <span data-text="&nbsp">&nbsp</span>
+            <span data-text="N">N</span>
             <span data-text="T">T</span>
             <span data-text="K">K</span>
         </div>
@@ -107,5 +112,7 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" async></script>
+
+<script src="script/script.js" async></script>
 </html>
