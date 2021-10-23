@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>portfolio</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
         <link rel="stylesheet" href="scss/style.css">
       
     </head>
@@ -25,20 +26,23 @@
     <section class="banner">
         <div class="container">
             <img class="banner-img img_js" src="img/Main-IMG.png" alt="main-banner">
-            <h1 class="banner-title title_js">
+            <h1 class="banner-title title_js" >
                 NTKiet
             </h1>
             <div class="banner-menu">
                 <ul class="banner-menu-list">
-                    <li class="banner-items title_js">
+                    <li class="banner-items title_js "
+                     data-aos="zoom-in-right" data-aos-offset="200"  data-aos-delay="50">
                         <h2>ART DIRECTOR</h2>
                         <P>Designer</P>
                     </li>
-                    <li class="banner-items title_js">
+                    <li class="banner-items title_js"
+                    data-aos="zoom-in-up" data-aos-offset="200"  data-aos-delay="100">
                         <h2>Create Content</h2>
                         <P>Content Director</P>
                     </li>
-                    <li class="banner-items title_js">
+                    <li class="banner-items title_js"
+                    data-aos="zoom-in-left" data-aos-offset="200"  data-aos-delay="50">
                         <h2>Designer</h2>
                         <P>Designer</P>
                     </li>
@@ -49,15 +53,15 @@
     <section class="editor">
         <div class="container">
             <div class="img-first">
-                <img src="img/IMG.png" alt="" class="editor-img img_js">
+                <img src="img/IMG.png" alt="" class="editor-img img_js"  data-aos="fade-right">
             </div>
             <div class="editor-right">
-                <h1 class="title_js">Editorial</h1>
-                <img src="img/3-IMG.png" alt="" class="editor-img img_js">
+                <h1 class="title_js"  data-aos="fade-down">Editorial</h1>
+                <img src="img/3-IMG.png" alt="" class="editor-img img_js"  data-aos="fade-left">
             </div>
             <div class="img-last">
-                <img src="img/4-IMG.png" alt="" class="editor-img img_js">
-                <span class="title_js">
+                <img src="img/4-IMG.png"  data-aos="fade-right" alt="" class="editor-img img_js">
+                <span class="title_js"  data-aos="fade-up">
                     Photographer
                 </span>
             </div>
@@ -65,30 +69,30 @@
     </section>
     <section class="content">
         <div class="container content-img">
-            <img src="img/4.jpeg" alt="" class="img-items img_js">
-            <img src="img/5.jpeg" alt="" class="img-items img_js">
-            <img src="img/6.jpeg" alt="" class="img-items img_js">
-            <p class="content-title title_js"><span>My Style</span> <span>Favorite</span></p>
+            <img src="img/4.jpeg" alt="" class="img-items img_js" data-aos="zoom-in-right" data-aos-delay="100">
+            <img src="img/5.jpeg" alt="" class="img-items img_js" data-aos="zoom-in-right" data-aos-delay="50">
+            <img src="img/6.jpeg" alt="" class="img-items img_js" data-aos="zoom-in-right" data-aos-delay="100">
+            <p class="content-title title_js"  data-aos="fade-right"><span>My Style</span> <span>Favorite</span></p>
         </div>
     </section>
-    <section class="review">
-        <div class="reivew-img-content">
+    <section class="review" data-aos="zoom-in" data-aos-delay="300">
+        <div class="reivew-img-content" >
             <img src="img/6.jpeg" alt="" class="review-img img_js">
             <img src="img/5.jpeg" alt="" class="review-img img_js">
             <img src="img/4.jpeg" alt="" class="review-img img_js">
         </div>
         <div class="container review-content">
             <div class="review-content">
-                <h3 class="review-title title_js">Editoral</h3>
-                <h3 class="review-title title_js">Editoral</h3>
-                <h3 class="review-title title_js">Editoral</h3>
+                <h3 class="review-title title_js" data-aos="fade-right" data-aos-delay="50">Editoral</h3>
+                <h3 class="review-title title_js" data-aos="fade-right" data-aos-delay="100">Editoral</h3>
+                <h3 class="review-title title_js" data-aos="fade-right" data-aos-delay="150">Editoral</h3>
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-in" data-aos-delay="200">
         <div class="container">
             <h3 class="footer-title title_js">New Project</h3>
-            <div class="footer-img">
+            <div class="footer-img" data-aos="fade-in" data-aos-delay="200">
                 <img src="img/7.jpeg" alt="" class="footer-img-items img_js">
                 <img src="img/6.jpeg" alt="" class="footer-img-items img_js">
                 <img src="img/5.jpeg" alt="" class="footer-img-items img_js">
@@ -113,6 +117,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" async></script>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1000,
+    });
+  </script>
 <script src="script/script.js" async></script>
 </html>

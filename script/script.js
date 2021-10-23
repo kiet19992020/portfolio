@@ -44,42 +44,27 @@ const timeline2 = gsap.timeline({
 })
 timeline2
     .from('.header', {
-        y: '-100%',
-        ease: 'bounce'
+        opacity: 0,
+        delay: "2",
+        ease:  Power4.easeIn,
     }) //ben tren xuong
 
 const timeline = gsap.timeline({
     defaults: {
-        duration: 2.5
+        duration: 2.5,
     }
 })
 timeline
     .from('.banner-title', {
-        x: '100vh',
-        ease: 'power2.in'
+        y: '50vh',
+        ease: Power4.easeIn,
+		delay: "0.5",
+        opacity: 0
     }, 1)
     .from('.banner-img', {
-        x: '-120vw',
-        ease: 'power2.in'
+        x: '-100vw',
+        ease: 'power2.in',
+		delay: "0.5",
+        opacity: 0
 }, 1)
 
-
-gsap.registerPlugin(ScrollTrigger);
-
-const tll = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".editor",
-        markers:true, //note bat dau ket thuc
-        start: "top 55%", //vi tri bat dau thuc hien
-        end: "top 90%",  //vi tri ket thuc
-        // scrub: 3, //Quay lai (3 time)
-        toggleClass: "active",
-    },
-});
-
-tll.from(".editor-img", {
-    bottom: -800,
-    opacity:0,
-    ease: "power3.out",
-    duration: 0.5,
-})

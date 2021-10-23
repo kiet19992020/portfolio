@@ -255,7 +255,7 @@ table {
 }
 .review {
     text-align: center;
-    padding: 45rem 0;
+    padding: 25rem 0;
     position: relative;
     overflow-x: hidden;
     .reivew-img-content {
@@ -473,7 +473,7 @@ img:not(.banner-img) {
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1025px) {
     .banner {
         &-title {
             font-size: 18rem;
@@ -503,9 +503,9 @@ img:not(.banner-img) {
         }
         .img-last {
             span {
-                font-size: 12rem;
+                font-size: 13rem;
                 right: 6%;
-                margin-top: 5rem;
+                margin-top: -1rem;
             }
         }
     }
@@ -697,6 +697,10 @@ img:not(.banner-img) {
     }
 }
 @media screen and (max-width: 427px) {
+    .loading span {
+        font-size: 4rem;
+        letter-spacing: 8px;
+    }
     .header {
         .item-menu {
             font-size: 1.2rem;
